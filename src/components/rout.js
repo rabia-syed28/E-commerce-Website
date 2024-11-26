@@ -4,11 +4,11 @@ import Home from "./home";
 import Shop from "./shop";
 import Cart from "./cart";
 import Contact from "./contact";
-const Rout = ({ shop, Filter, allCateFilter, addtocart, cart, setCart }) => {
+const Rout = ({ shop, Filter, allCateFilter, addToCart, cart, setCart }) => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home addtocart={addtocart} />} />
+        <Route path="/" element={<Home addToCart={addToCart} />} />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
         <Route
           path="shop"
@@ -17,7 +17,7 @@ const Rout = ({ shop, Filter, allCateFilter, addtocart, cart, setCart }) => {
               shop={shop}
               Filter={Filter}
               allCateFilter={allCateFilter}
-              addtocart={addtocart}
+              addToCart={addToCart}
             />
           }
         />

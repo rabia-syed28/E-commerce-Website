@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa6";
 import "./home.css";
 
-const Home = ({ addtocart }) => {
+const Home = ({ addToCart }) => {
   //Product Category
   const [newProduct, setNewProduct] = useState([]);
   const [featuredProduct, setFeaturdProduct] = useState([]);
@@ -96,7 +96,12 @@ const Home = ({ addtocart }) => {
                           <div className="info">
                             <h3>{curElm.Name}</h3>
                             <p>${curElm.price}</p>
-                            <button className="btn">Add To Cart</button>
+                            <button
+                              className="btn"
+                              onClick={() => addToCart(curElm)}
+                            >
+                              Add To Cart
+                            </button>
                           </div>
                         </div>
                       </>
@@ -203,7 +208,7 @@ const Home = ({ addtocart }) => {
                           <button>
                             <FaHeart />
                           </button>
-                          <button onClick={() => addtocart(curElm)}>
+                          <button onClick={() => addToCart(curElm)}>
                             <FaShoppingCart />
                           </button>
                         </div>
@@ -234,7 +239,7 @@ const Home = ({ addtocart }) => {
                           <button>
                             <FaHeart />
                           </button>
-                          <button onClick={() => addtocart(curElm)}>
+                          <button onClick={() => addToCart(curElm)}>
                             <FaShoppingCart />
                           </button>
                         </div>
@@ -265,7 +270,7 @@ const Home = ({ addtocart }) => {
                           <button>
                             <FaHeart />
                           </button>
-                          <button onClick={() => addtocart(curElm)}>
+                          <button onClick={() => addToCart(curElm)}>
                             <FaShoppingCart />
                           </button>
                         </div>
