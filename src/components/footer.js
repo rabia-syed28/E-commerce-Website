@@ -61,7 +61,6 @@ const Footer = () => {
               <div className="box">
                 <h3>Your Account</h3>
                 <ul>
-                  <li>About us</li>
                   <li>Account</li>
                   <li>Payment</li>
                   <li>Sales</li>

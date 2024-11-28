@@ -166,3 +166,70 @@
     margin-top: 20px;
     cursor: pointer;
 }
+
+/* Responsive Styles */
+
+/* For tablets and medium screens (768px and below) */
+@media (max-width: 768px) {
+    .cart .empty_cart button {
+      margin-left: 40%;
+      padding: 8px 20px;
+    }
+  
+    .cart .container .box {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .cart .container .box .img_box img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .cart .container .box .detail {
+      flex-direction: column;
+      margin-left: 0;
+    }
+  
+    .cart .container .box .detail .info,
+    .cart .container .box .detail .quantity,
+    .cart .container .box .detail .icon {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  
+  /* For mobile screens (480px and below) */
+  @media (max-width: 480px) {
+    .cart h3 {
+      font-size: 24px;
+    }
+  
+    .cart .empty_cart h2 {
+      font-size: 14px;
+    }
+  
+    .cart .container .box .detail .info h3 {
+      font-size: 16px;
+    }
+  
+    .cart .container .box .detail .info h4,
+    .cart .container .box .detail .info p {
+      font-size: 12px;
+    }
+  
+    .cart .container .box .detail .quantity button,
+    .cart .container .box .detail .quantity input {
+      font-size: 12px;
+      width: auto;
+    }
+  
+    .cart .bottom .Total h4 {
+      font-size: 18px;
+    }
+  
+    .cart .bottom button {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+  }

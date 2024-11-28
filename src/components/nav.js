@@ -110,11 +110,6 @@ const Nav = ({ search, setSearch, searchProduct }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="link">
-                  About
-                </Link>
-              </li>
-              <li>
                 <Link to="/contact" className="link">
                   Contact
                 </Link>

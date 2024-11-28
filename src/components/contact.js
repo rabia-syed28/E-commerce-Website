@@ -20,7 +20,7 @@ const Contact = () => {
     const option = {
       method: "POST",
       headers: {
-        "Content-Type": "aplication/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         Name,
@@ -31,7 +31,7 @@ const Contact = () => {
     };
 
     const send = await fetch(
-      "https://react-ecommerce-contact-default-rtdb.firebaseio.com/Message.json",
+      "https://react-ecommerce-contact-6c046-default-rtdb.firebaseio.com/Message.json",
       option
     );
 
@@ -104,7 +104,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
               </div>
-              <button type="sublit" onClick={send}>
+              <button type="submit" onClick={send}>
                 Send
               </button>
             </form>

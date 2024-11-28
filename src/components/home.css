@@ -537,30 +537,79 @@
 
 @media (max-width: 768px) {
   .home .top_banner {
-      height: 200px;
+    height: auto;
+    padding: 30px 40px;
   }
   .home .top_banner .content {
-      text-align: center;
-      padding: 10px;
-  }
+    text-align: center;
+    padding: 10px;
+}
   .home .top_banner .content h2 {
-      font-size: 24px;
+    font-size: 24px;
+    }
+
+  .home .top_banner .content p {
+    font-size: 14px;
   }
+
+  .home .top_banner .content .link {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  
+  
   .home .trending .container .left_box {
       width: 100%;
   }
   .home .banners .container {
       flex-direction: column;
   }
+  .home .product_type .container {
+    justify-content: center; /* Center-align boxes on smaller screens */
+}
+
+.home .product_type .container .box {
+    width: 300px; /* Reduce box width to fit more on the screen */
+}
+
+.home .product_type .container .box .header h2 {
+    font-size: 14px;
+}
+
+.home .product_type .container .box .productbox .detail h3,
+.home .product_type .container .box .productbox .detail p {
+    font-size: 12px;
+}
 }
 
 @media (max-width: 576px) {
-  .home .top_banner {
-      height: 150px;
-  }
-  .home .top_banner .content h2 {
-      font-size: 18px;
-  }
+    .home .top_banner {
+        padding: 20px;
+      }
+    
+      .home .top_banner .content {
+        padding: 10px 20px;
+        top: 5%;
+        text-align: center;
+      }
+    
+      .home .top_banner .content h3 {
+        font-size: 14px;
+      }
+    
+      .home .top_banner .content h2 {
+        font-size: 24px;
+      }
+    
+      .home .top_banner .content p {
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+    
+      .home .top_banner .content .link {
+        padding: 6px 15px;
+        font-size: 12px;
+      }
   .home .trending .container .left_box,
   .home .trending .container .right_box {
       width: 100%;
@@ -572,4 +621,31 @@
   .home .product_type .container .box {
       width: 100%;
   }
+  .home .product_type {
+    padding: 10px;
+}
+
+.home .product_type .container .box {
+    width: 100%; /* Full-width boxes for mobile */
+    height: auto; /* Allow dynamic height */
+}
+
+.home .product_type .container .box .productbox {
+    flex-direction: column; /* Stack image and details vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.home .product_type .container .box .productbox .img-box img {
+    margin-bottom: 10px;
+}
+
+.home .product_type .container .box .productbox .detail {
+    margin-left: 0;
+}
+
+.home .product_type .container .box .productbox .detail .icon button {
+    padding: 8px 8px;
+    margin-left: 5px;
+}
 }

@@ -78,3 +78,60 @@
     background: #fed700;
     cursor: pointer;
 }
+/* Responsive Styles */
+
+/* For tablets and medium screens (768px and below) */
+@media (max-width: 768px) {
+  .contact {
+      padding: 10px 20px;
+  }
+
+  .contact .container .form {
+      width: 100%;
+      padding: 15px 20px;
+  }
+
+  .contact .container .form h2 {
+      font-size: 16px;
+  }
+
+  .contact .container .form .box {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .contact .container .form .box .lable h4 {
+      margin-left: 0;
+  }
+
+  .contact .container .form .box .input input,
+  .contact .container .form .box .input textarea {
+      margin-right: 0;
+      width: 100%;
+  }
+
+  .contact .container .form button {
+      margin-left: 0;
+      width: 100%;
+  }
+}
+
+/* For mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .contact {
+      padding: 10px;
+  }
+
+  .contact .container .form {
+      padding: 10px;
+  }
+
+  .contact .container .form h2 {
+      font-size: 14px;
+  }
+
+  .contact .container .form button {
+      padding: 10px;
+      font-size: 14px;
+  }
+}
